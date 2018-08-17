@@ -29,7 +29,7 @@ echo $'\n' >> /data/original-mail.txt
  ls -1 /data/extracted/ > /data/fileup
 
  for up in `cat /data/fileup`; do
-  status=$(curl -v -F "name=$ID" -F "file=@/data/extracted/$up" http://34.239.50.216:8080/iVault/addData)
+  status=$(curl -v -F "name=$ID" -F "file=@/data/extracted/$up" http://IP:8080/REST)
   txt_id=$(echo "$status"|cut -d',' -f1)
   file_hash=$(echo "$status"|cut -d',' -f2)
  done
