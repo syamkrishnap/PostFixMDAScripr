@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>IVault</title>
+    <style>
+        .mail-template{
+            width: 640px;
+            background-color: #fff;
+            margin: 0 auto;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .mail-header{
+            height: 100px;
+            background-color: #ab1e23;
+            text-align: center;
+            
+        }
+        .mail-header img{
+        margin-top: 25px;
+	}
+        .mail-body{
+            padding: 30px;
+            text-align: center;
+        }
+        .url-btn{
+            background-color: transparent;
+            font-weight: bold;
+            border: 0;
+            text-decoration: underline;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #ab1e23;
+            display: block;
+        }
+	.file-name {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ab1e23;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<div class="mail-template">
+    <div class="mail-header">
+<!--<img src="images/logo-white.png">-->
+<img src="http://example.com/image/logo-white.png">
+
+    </div>
+    <div class="mail-body">
+	<div class="file-name">File: {attached_digital_asset}</div>
+        <form>
+        Please click on the below URL to download the digital assets.
+        <a href="http://example.com/iVault/index.php?txt_search_ID={random_data}" class="url-btn">http://example.com/iVault/search.php</a>
+	File hash: {original_file_hash}
+        </form>
+    </div>
+
+
+
+</div>
+</body>
+
+</html>
